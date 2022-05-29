@@ -2,14 +2,20 @@ import requests
 import pandas as pd
 
 
-def get_goles():
-    goles=[]
+def players(country):
     
-    aux=requests.get("https://api-midprojec.herokuapp.com/goles").json()
-    for i in aux:#range(len(aux)):
-        goles.append(i)
+    aux=requests.get(f"https://api-midproj.herokuapp.com/players/{country}").json()
+ 
+    return aux
 
-    goals=goles[0]
+def goals():
+    
+    aux=requests.get("https://api-midproj.herokuapp.com/goals/").json()
+ 
+    return aux
 
 
-    return goals
+def teams(team):    
+    aux=requests.get(f"https://api-midproj.herokuapp.com/teams/{team}").json()
+
+    return aux

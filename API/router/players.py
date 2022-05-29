@@ -6,8 +6,8 @@ from json import loads
 
 router=APIRouter()
 
-@router.get("/goles")
-def get_matches():
-    res=list(db["Goals"].find({"England":11}))
+@router.get("/players/{country}")
+def get_players(country):
+    res=list(db["Players"].find({"country":country}))
     print(res)
     return loads(json_util.dumps(res))
