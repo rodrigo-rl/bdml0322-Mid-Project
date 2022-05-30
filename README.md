@@ -13,12 +13,13 @@ Se ha generado una imagen docker de esa API, que se ha subido a Heroku para pode
 
 ## Base de datos y API
 
-Los datos se han descargado de la plataforma Kaggle (https://www.kaggle.com/mcarujo/euro-cup-2020) y se pueden encontrar en la carpeta Data/eurocup_2020_results.csv. Una vez descargados se ha realizado un proceso de filtrado y de procesado de los datos (por ejemplo, las tres últimas columnas de datos son cadenas de caracteres y deberían ser listas de diccionarios).
+Los datos se han descargado de la plataforma Kaggle (https://www.kaggle.com/mcarujo/euro-cup-2020) y se pueden encontrar en la carpeta **Data/eurocup_2020_results.csv**. Una vez descargados se ha realizado un proceso de filtrado y de procesado de los datos (por ejemplo, las tres últimas columnas de datos son cadenas de caracteres y deberían ser listas de diccionarios).
 
-Para realizar este filtrado 
-In this case the data are the matches of the UEFA Euro 2020 from a kaggle database (). The raw data should be filtered and cleaned up before using them with Python. The filtered data is going to be stored in MongoDB
+Para realizar este filtrado y la organización de los datos para poder presentarlos se han escrito estos programas en python:
 
-After that, it is going to be created an API with Python to connect the streamlit enviroment with the data in MongoDB.
+![image](https://user-images.githubusercontent.com/101878865/171048303-7aeefee8-68e9-48a2-a488-9da81b5db300.png)
 
-I hope that you enjoy it as much as I enjoy programming it!
-
+- Players.ipynb -->
+- Teams.ipynb -->
+- data_management.ipynb -->
+- goals_per_team.ipynb -->
