@@ -19,7 +19,10 @@ Para realizar este filtrado y la organización de los datos para poder presentar
 
 ![image](https://user-images.githubusercontent.com/101878865/171048303-7aeefee8-68e9-48a2-a488-9da81b5db300.png)
 
-- Players.ipynb -->
-- Teams.ipynb -->
-- data_management.ipynb -->
-- goals_per_team.ipynb -->
+- data_management.ipynb --> Este es el código que se encarga de filtrar y ordenar los datos para darles el tipo correcto. Una vez hecho esto, se crea un documento con todos ellos en MongoDB para poder consultarlos.
+
+- Players.ipynb --> Este programa se encarga de leer los datos del documento de los partidos que se ha creado en MongoDB para crear otro documento en el que se recoge la actuación de los jugadores por partido (goles, tarjetas...).
+- Teams.ipynb --> El objetivo de este programa es crear un documento en MongoDB en el que se recojan los partidos que se jugaron y los resutlados de esos partidos.
+- goals_per_team.ipynb --> Con este código se hace una lista de todos los equipos que participaron en la competición y los goles que metieron. Se usa como un documento auxiliar para tener rápidamente una lista de los participantes.
+
+La API que se ha programado
