@@ -1,4 +1,5 @@
-# bdml0322-Mid-Project
+# Kaggle Uefa 2020 + Streamlit
+
 This is the Mid-Project of the course of Big Data and Machine Learning Course 
 
 The idea of this project is to show some data ordered in different tables inside streamlint enviroment. 
